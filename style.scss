@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@import "variables";
+@import "mixins";
+
+.main-container{
+    width: $mainContainerW;
+    height: 2000px;
+    // background-color: $bg-main;
+    margin: auto;
+}
+
+.nav-bar-main-div{
+    @include navBarDiv;
+        .nav-bar-left-section{
+            width: 330px;
+            height: 80px;
+            @include Display;
+                ul{
+                    width: 100%;
+                    list-style: none;
+                    @include Display;
+                        li{
+                            @include navBarFonts;
+                        }
+                }
+        }
+
+        .nav-bar-middle-section{
+            width: 90px;
+            height: 86px;
+                img{
+                    width: 100%;
+                }
+        }
+
+        .nav-bar-right-section{
+            width: 266px;
+            height: 80px;
+            @include Display;
+                ul{
+                    width: 100%;
+                    @include Display;
+                    list-style: none;
+                        li{
+                            @include navBarFonts;
+                        }
+                }
+        }
+}
+

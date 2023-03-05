@@ -1,0 +1,24 @@
+@mixin navBarDiv{
+    width: $mainContainerW;
+    height: 140px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+@mixin Display{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+@mixin navBarFonts{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: open sans;
+    line-height: 24px;
+    color: #323232;
+}

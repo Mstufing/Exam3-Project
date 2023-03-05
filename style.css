@@ -6,7 +6,9 @@
 .main-container {
   width: 1440px;
   height: 2000px;
+  background-color: #e5e5e5;
   margin: auto;
+  border: 2px solid black;
 }
 
 .nav-bar-main-div {
@@ -16,7 +18,6 @@
   justify-content: space-around;
   align-content: center;
   align-items: center;
-  border: 1px solid black;
 }
 .nav-bar-main-div .nav-bar-left-section {
   width: 330px;
@@ -70,4 +71,76 @@
   font-family: open sans;
   line-height: 24px;
   color: #323232;
+}
+
+.header-main-container {
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.header-main-container .inner-header-left-section-div {
+  width: 50%;
+  height: 774px;
+}
+.header-main-container .inner-header-right-section-div {
+  width: 48%;
+  height: 774px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header-main-container .inner-header-right-section-div .header-right-section-top-div {
+  width: 90%;
+  height: 350px;
+}
+.header-main-container .inner-header-right-section-div .header-right-section-top-div h3 {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: open sans;
+  line-height: 24px;
+  color: #323232;
+}
+.header-main-container .inner-header-right-section-div .header-right-section-top-div h1 {
+  font-size: 48px;
+  font-weight: 400;
+  font-family: Tenor Sans;
+  color: #57463A;
+  line-height: 57.6px;
+  margin-top: 17px;
+  margin-bottom: 40px;
+}
+.header-main-container .inner-header-right-section-div .header-right-section-top-div h2 {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: Open Sans;
+  line-height: 27px;
+  color: #323232;
+  margin-bottom: 67px;
+}
+.header-main-container .inner-header-right-section-div .header-right-section-top-div button {
+  width: 245px;
+  height: 60px;
+  background-color: #A1B29F;
+  border: none;
+  cursor: pointer;
+}
+.header-main-container .inner-header-right-section-div .header-right-section-top-div button span {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Open Sans;
+  line-height: 24px;
+  color: #f6f6f6;
+}
+.header-main-container .inner-header-right-section-div .header-right-section-bottom-div {
+  margin-top: 100px;
+  width: 250px;
+}
+.header-main-container .inner-header-right-section-div .header-right-section-bottom-div img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

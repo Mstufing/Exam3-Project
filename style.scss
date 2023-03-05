@@ -6,13 +6,16 @@
 @import "variables";
 @import "mixins";
 
+// Main Container
 .main-container{
     width: $mainContainerW;
     height: 2000px;
-    // background-color: $bg-main;
+    background-color: $bg-main;
     margin: auto;
+    border: 2px solid black
 }
 
+// Nav Bar Section
 .nav-bar-main-div{
     @include navBarDiv;
         .nav-bar-left-section{
@@ -52,3 +55,58 @@
         }
 }
 
+// Header Section
+
+
+.header-main-container{
+    width: $mainContainerW;
+    @include Display;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+        .inner-header-left-section-div{
+            width: 50%;
+            height: 774px;
+        }
+
+        .inner-header-right-section-div{
+            width: 48%;
+            height: 774px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .header-right-section-top-div{
+                width: 90%;
+                height: 350px;
+                    h3{
+                        @include navBarFonts;
+                    }
+                    h1{
+                        @include mainFont;
+                        margin-top: 17px;
+                        margin-bottom: 40px;
+                    }  
+                    h2{
+                        @include secondFont;
+                        margin-bottom: 67px;
+                    }
+                    button{
+                        @include mainButton;
+                        span{
+                            @include mainButtonSpan;
+                        }
+                    }
+            }
+
+            .header-right-section-bottom-div{
+                margin-top: 100px;
+                width: 250px;
+                // height: 50px;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        cursor: pointer;
+                    }
+            }
+        }
+}

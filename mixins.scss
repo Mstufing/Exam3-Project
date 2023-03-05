@@ -5,7 +5,6 @@
     justify-content: space-around;
     align-content: center;
     align-items: center;
-    border: 1px solid black;
 }
 
 @mixin Display{
@@ -21,4 +20,42 @@
     font-family: open sans;
     line-height: 24px;
     color: #323232;
+}
+
+// MainFont
+
+@mixin mainFont{
+    font-size: $myFontSize;
+    font-weight: $myFontWeight;
+    font-family: $myFontFamily;
+    color: $myFontColor;
+    line-height: 57.6px;
+}
+
+// SecondFont
+
+@mixin secondFont{
+    font-size: $secondFontSize;
+    font-weight: $secondFontWeight;
+    font-family: $secondFontFamily;
+    line-height: $secondFoneHeight;
+    color: $secondFontColor;
+}
+
+// ButtonInfo
+
+@mixin mainButton{
+    width: $buttonWidth;
+    height: $buttonHeight;
+    background-color: $buttonColor;
+    border: $buttonBorder;
+    cursor: $buttonCursor;
+}
+
+@mixin mainButtonSpan{
+    font-size: $mainButtonSpanSize;
+    font-weight: $mainButtonSpanWeight;
+    font-family: $mainButtonSpanFamily;
+    line-height: $mainButtonSpanHeight;
+    color: $mainButtonSpanColor;
 }

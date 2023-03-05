@@ -295,4 +295,33 @@
   font-family: Open Sans;
   line-height: 24px;
   color: #f6f6f6;
+}
+
+.sixth-page-main-container {
+  width: 1160px;
+  margin: auto;
+  margin-top: 160px;
+}
+.sixth-page-main-container .inner-sixth-page-top-div {
+  width: 100%;
+}
+.sixth-page-main-container .inner-sixth-page-top-div h2 {
+  font-size: 48px;
+  font-weight: 400;
+  font-family: Tenor Sans;
+  color: #57463A;
+  line-height: 57.6px;
+  margin-bottom: 100px;
+}
+.sixth-page-main-container .inner-sixth-page-bottom-div {
+  width: 1160px;
+  height: 700px;
+  background-image: url(/images/sixth-page-image.svg);
+}
+.sixth-page-main-container .inner-sixth-page-bottom-div img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

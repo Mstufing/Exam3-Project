@@ -14,6 +14,15 @@
     align-items: center;
 }
 
+// Display For Flex Direction=COLUMN
+@mixin displayColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
 @mixin navBarFonts{
     font-size: 16px;
     font-weight: 400;
@@ -29,7 +38,7 @@
     font-weight: $myFontWeight;
     font-family: $myFontFamily;
     color: $myFontColor;
-    line-height: 57.6px;
+    line-height: $myFontHeight;
 }
 
 // SecondFont
@@ -40,6 +49,14 @@
     font-family: $secondFontFamily;
     line-height: $secondFoneHeight;
     color: $secondFontColor;
+}
+
+// ThirdFont
+@mixin thirdFont{
+    font-size: $thirdFontSize;
+    font-weight: $thirdFontWeight;
+    font-family: $thirdFontFamily;
+    line-height: $thirdFoneHeight;
 }
 
 // ButtonInfo
@@ -58,4 +75,12 @@
     font-family: $mainButtonSpanFamily;
     line-height: $mainButtonSpanHeight;
     color: $mainButtonSpanColor;
+}
+
+
+// Second Main Div 1160px
+@mixin secondMainDiv{
+    width: $secondMainW;
+    margin: $secondMainMarginAuto;
+    margin-top: $secondMainMarginTop;
 }

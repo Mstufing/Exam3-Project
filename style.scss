@@ -9,7 +9,7 @@
 // Main Container
 .main-container{
     width: $mainContainerW;
-    height: 2000px;
+    // height: 2000px;
     background-color: $bg-main;
     margin: auto;
     border: 2px solid black
@@ -18,6 +18,10 @@
 // Nav Bar Section
 .nav-bar-main-div{
     @include navBarDiv;
+    .add-icon{
+        display: none;
+    }
+
         .nav-bar-left-section{
             width: 330px;
             height: 80px;
@@ -56,8 +60,6 @@
 }
 
 // Header Section
-
-
 .header-main-container{
     width: $mainContainerW;
     @include Display;
@@ -106,6 +108,116 @@
                         width: 30px;
                         height: 30px;
                         cursor: pointer;
+                    }
+            }
+        }
+}
+
+// Second Page
+.second-page-main-container{
+    @include secondMainDiv;
+        .inner-second-page-top-div{
+            width: 100%;
+                h2{
+                    @include mainFont;
+                    margin-bottom: 100px;
+                }
+        }
+
+        .inner-second-page-bottom-div{
+            width: 100%;
+            @include Display;
+                .bottom-div{
+                    width: 31%;
+                        h3{
+                            @include secondFont;
+                            text-align: center;
+                        }
+                }
+        }
+
+}
+
+// Third Page
+.third-page-main-container{
+    @include secondMainDiv;
+        .inner-third-page-top-div{
+            width: 100%;
+                h2{
+                    @include mainFont;
+                    margin-bottom: 100px;
+                }
+        }
+
+        .inner-third-page-bottom-div{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            .janger-div{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .icons-div{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                        .inner-icons-div{
+                            width: 100%;
+                            height: 240px;
+                            @include displayColumn;
+                            gap: 20px;
+                            border: 1px solid black;
+                            h3{
+                                @include secondFont;
+                            }
+                        }
+                }
+            }
+            
+        }
+}
+
+// Fourth Page
+.fourth-page-main-container{
+    @include secondMainDiv;
+        h2{
+            @include mainFont;
+            margin-bottom: 100px;
+        }
+}
+
+// Fifth Page
+.fifth-page-main-container{
+    width: $mainContainerW;
+    @include Display;
+        .left-section-div{
+            width: 50%;
+            height: 475px;
+        }
+
+        .right-section-div{
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .inner-right-section-div{
+                width: 70%;
+                // height: 350px;
+                    h2{
+                        @include thirdFont;
+                    }
+                    p{
+                        @include secondFont;
+                        margin-top: 40px;
+                        margin-bottom: 50px;
+                    }
+                    button{
+                        @include mainButton;
+                        span{
+                            @include mainButtonSpan;
+                        }
                     }
             }
         }

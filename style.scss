@@ -9,7 +9,6 @@
 // Main Container
 .main-container{
     width: $mainContainerW;
-    // height: 2000px;
     background-color: $bg-main;
     margin: auto;
     border: 2px solid black
@@ -238,21 +237,119 @@
             width: $secondMainW;
             height: 700px;
             background-image: url(/images/sixth-page-image.svg);
+            position: relative;
                 img{
-                    width: 50px;
-                    height: 50px;
-                   
+                    position: absolute;
+                    top: 328px;
+                    left: 558px;
+                    cursor: pointer;
                 }
         }
 }
 
 // Seventh Page
-
 .seventh-page-main-container{
     @include secondMainDiv;
-    height: 500px;
         h2{
             @include mainFont;
             margin-bottom: 100px;
+        }
+}
+
+// Eighth Page
+
+.eightth-page-main-container{
+    width: $mainContainerW;
+    // height: 1070px;
+    display: flex;
+    flex-direction: column;
+        .inner-eightth-page-div{
+            width: 100%;
+            display: flex;
+                .left-section{
+                    width: 50%;
+                }
+                .right-section{
+                    width: 50%;
+                    height: 535px;
+                    background-color:#E3DACE;
+                        .right-section-info-div{
+                            width: 80%;
+                            margin-left: 40px;
+                            margin-top: 110px;
+                                h3{
+                                  @include thirdFont; 
+                                }
+                                p{
+                                    @include secondFont;
+                                    margin-top: 40px;
+                                    margin-bottom: 70px;
+                                }
+                                button{
+                                    @include mainButton;
+                                    span{
+                                        @include mainButtonSpan;
+                                    }
+                                }
+                        }
+                }
+        }
+}
+
+// Nineth Page
+
+.nineth-page-main-container{
+    @include secondMainDiv;
+    height: 590px;
+    border: 7px inset #A1B29F;
+    margin-bottom: 200px;
+        .inner-nineth-page-div{
+            width: 1135px;
+            height: 563px;
+            border: 1px solid #715B4B;
+            margin: 13px;
+            @include displayColumn;
+                h1{
+                    width: 658px;
+                    height: 144px;
+                    @include mainFont;
+                    line-height: 72px;
+                }
+                h3{
+                    width: 922px;
+                    height: 108px;
+                    @include thirdFont;
+                    margin: 40px 0;
+                }
+        }
+
+}
+
+// Footer
+
+.footer-main-container{
+    width: $mainContainerW;
+    height: 380px;
+    background-color: #715B4B;
+    @include displayColumn;
+        .inner-footer-div{
+            @include secondMainDiv;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+                .footer-info-div{
+                    width: 25%;
+                        h3{
+                            width: 100%;
+                            margin: 9px;
+                            @include fourFont;
+                        }
+                        img{
+                            background: rgb(239, 192, 192);
+                            cursor: pointer;
+                            width: 52px;
+                            height: 52px;
+                        }
+                }
         }
 }

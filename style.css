@@ -317,11 +317,153 @@
   width: 1160px;
   height: 700px;
   background-image: url(/images/sixth-page-image.svg);
+  position: relative;
 }
 .sixth-page-main-container .inner-sixth-page-bottom-div img {
+  position: absolute;
+  top: 328px;
+  left: 558px;
+  cursor: pointer;
+}
+
+.seventh-page-main-container {
+  width: 1160px;
+  margin: auto;
+  margin-top: 160px;
+}
+.seventh-page-main-container h2 {
+  font-size: 48px;
+  font-weight: 400;
+  font-family: Tenor Sans;
+  color: #57463A;
+  line-height: 57.6px;
+  margin-bottom: 100px;
+}
+
+.eightth-page-main-container {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+.eightth-page-main-container .inner-eightth-page-div {
+  width: 100%;
+  display: flex;
+}
+.eightth-page-main-container .inner-eightth-page-div .left-section {
+  width: 50%;
+}
+.eightth-page-main-container .inner-eightth-page-div .right-section {
+  width: 50%;
+  height: 535px;
+  background-color: #E3DACE;
+}
+.eightth-page-main-container .inner-eightth-page-div .right-section .right-section-info-div {
+  width: 80%;
+  margin-left: 40px;
+  margin-top: 110px;
+}
+.eightth-page-main-container .inner-eightth-page-div .right-section .right-section-info-div h3 {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Tenor Sans;
+  line-height: 36px;
+}
+.eightth-page-main-container .inner-eightth-page-div .right-section .right-section-info-div p {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: Open Sans;
+  line-height: 27px;
+  color: #323232;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+.eightth-page-main-container .inner-eightth-page-div .right-section .right-section-info-div button {
+  width: 245px;
+  height: 60px;
+  background-color: #A1B29F;
+  border: none;
+  cursor: pointer;
+}
+.eightth-page-main-container .inner-eightth-page-div .right-section .right-section-info-div button span {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Open Sans;
+  line-height: 24px;
+  color: #f6f6f6;
+}
+
+.nineth-page-main-container {
+  width: 1160px;
+  margin: auto;
+  margin-top: 160px;
+  height: 590px;
+  border: 7px inset #A1B29F;
+  margin-bottom: 200px;
+}
+.nineth-page-main-container .inner-nineth-page-div {
+  width: 1135px;
+  height: 563px;
+  border: 1px solid #715B4B;
+  margin: 13px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+.nineth-page-main-container .inner-nineth-page-div h1 {
+  width: 658px;
+  height: 144px;
+  font-size: 48px;
+  font-weight: 400;
+  font-family: Tenor Sans;
+  color: #57463A;
+  line-height: 57.6px;
+  line-height: 72px;
+}
+.nineth-page-main-container .inner-nineth-page-div h3 {
+  width: 922px;
+  height: 108px;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Tenor Sans;
+  line-height: 36px;
+  margin: 40px 0;
+}
+
+.footer-main-container {
+  width: 1440px;
+  height: 380px;
+  background-color: #715B4B;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.footer-main-container .inner-footer-div {
+  width: 1160px;
+  margin: auto;
+  margin-top: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-main-container .inner-footer-div .footer-info-div {
+  width: 25%;
+}
+.footer-main-container .inner-footer-div .footer-info-div h3 {
+  width: 100%;
+  margin: 9px;
+  font-size: 16px;
+  font-weight: 300px;
+  font-family: Open Sans;
+  line-height: 24px;
+  color: #F6F6F6;
+}
+.footer-main-container .inner-footer-div .footer-info-div img {
+  background: rgb(239, 192, 192);
+  cursor: pointer;
+  width: 52px;
+  height: 52px;
 }/*# sourceMappingURL=style.css.map */

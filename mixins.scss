@@ -1,3 +1,5 @@
+@import "variables";
+
 @mixin navBarDiv{
     width: $mainContainerW;
     height: 140px;
@@ -59,6 +61,15 @@
     line-height: $thirdFoneHeight;
 }
 
+// FourthFont 
+@mixin fourFont{
+    font-size: $fourFontSize;
+    font-weight: $fourFontWeight;
+    font-family: $fourFontFamily;
+    line-height: $fourFontHeight;
+    color: $fourFontColor;
+}
+
 // ButtonInfo
 
 @mixin mainButton{
@@ -82,5 +93,5 @@
 @mixin secondMainDiv{
     width: $secondMainW;
     margin: $secondMainMarginAuto;
-    margin-top: $secondMainMargxinTop;
+    margin-top: $secondMainMarginTop;
 }
